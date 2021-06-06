@@ -17,10 +17,10 @@
 #define LCD_CHR 1 // sending data
 #define LCD_CMD 0 // sending command
 
-#define LCD_LINE_1  0X80 // LCD RAM ADDRESS FOR THE 1ST LINE
-#define LCD_LINE_2  0xC0 // LCD RAM address for the 2nd line
-#define LCD_LINE_3  0x94 // LCD RAM address for the 3rn line
-#define LCD_LINE_4  0xD4 // LCD RAM address for the 4th line 
+// #define LCD_LINE_1  0X80 // LCD RAM ADDRESS FOR THE 1ST LINE
+// #define LCD_LINE_2  0xC0 // LCD RAM address for the 2nd line
+// #define LCD_LINE_3  0x94 // LCD RAM address for the 3rn line
+// #define LCD_LINE_4  0xD4 // LCD RAM address for the 4th line 
 
 #define LCD_BACKLIGHT  0x08 // ON
 // #define LCD_BACKLIGHT = 0x00 //OFF
@@ -93,18 +93,6 @@ void bus_write_text(char character){
         printf("Failed to write to the i2c bus.\n");
     }
 }
-
-void lcd_init(){
-    lcd_byte(0x33,LCD_CMD);
-    lcd_byte(0x32, LCD_CMD);
-    lcd_byte(0x06, LCD_CMD);
-    lcd_byte(0x0C, LCD_CMD);
-    lcd_byte(0x28, LCD_CMD);
-    lcd_byte(0x01, LCD_CMD);
-
-    sleep(E_DELAY);
-}
-
 void lcd_toggle_enable(int bits){
     sleep(E_DELAY);
     bus_write_bit(bits | ENABLE);
@@ -114,6 +102,7 @@ void lcd_toggle_enable(int bits){
     
     sleep(E_DELAY);
 }
+
 
 void lcd_byte(char bits, int mode){
     // send byte to data pins
@@ -132,6 +121,20 @@ void lcd_byte(char bits, int mode){
     lcd_toggle_enable(bits_low);
 }
 
+void lcd_init(){
+    lcd_byte(0x33,LCD_CMD);
+    lcd_byte(0x32, LCD_CMD);
+    lcd_byte(0x06, LCD_CMD);
+    lcd_byte(0x0C, LCD_CMD);
+    lcd_byte(0x28, LCD_CMD);
+    lcd_byte(0x01, LCD_CMD);
+
+    sleep(E_DELAY);
+}
+
+
+
+
 void lcd_string(char *message, char line){
     // Send string to display
     lcd_byte(line,LCD_CMD);
@@ -145,22 +148,22 @@ void lcd_string(char *message, char line){
 
 }
 
-int main(){
-    bus_open();
-    lcd_init();
-    sleep(2);
+// int main(){
+//     bus_open();
+//     lcd_init();
+//     sleep(2);
 
-    lcd_string(" HELLO WORLD!!!", LCD_LINE_1);
-    lcd_string("I'M RASPBERRY PI",LCD_LINE_2);
+//     lcd_string(" HELLO WORLD!!!", LCD_LINE_1);
+//     lcd_string("I'M RASPBERRY PI",LCD_LINE_2);
 
-    sleep(5);
+//     sleep(5);
 
-    lcd_string("LET'S ROCK",LCD_LINE_1);
-    lcd_string("LETS ROLLLL", LCD_LINE_2);
+//     lcd_string("LET'S ROCK",LCD_LINE_1);
+//     lcd_string("LETS ROLLLL", LCD_LINE_2);
 
-    sleep(5);
+//     sleep(5);
 
-    return 0;
-}
+//     return 0;
+// }
 
 
