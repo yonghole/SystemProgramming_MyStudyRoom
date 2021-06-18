@@ -73,13 +73,13 @@ void error_handling(char *message){
 
 void exit_handler(int sig){ 
    close(act_socket);
-   printf(" sensing PI exit\n");
+   printf(" main PI exit from act_socket\n");
    exit(1);
 }
 
 void exit_handler2(int sig){ 
    close(sensor_socket);
-   printf(" sensing PI exit\n");
+   printf(" main PI exit from sensor_socket\n");
    exit(1);
 }
 
