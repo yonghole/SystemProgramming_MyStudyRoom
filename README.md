@@ -4,7 +4,7 @@ System / Embedded Programming Project
 
 시연 영상 >> [https://www.youtube.com/watch?v=j0Dk9-GmF0s](https://www.youtube.com/watch?v=j0Dk9-GmF0s)
 
-![Untitled](/uploads/6c9e0363e5a677a8fbf63ed633b6c624/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55180768/122497011-ae35de80-d027-11eb-92ed-b2aec0302518.png)
 
 # 1. 개요
 
@@ -57,7 +57,7 @@ System / Embedded Programming Project
 
 # 시스템 개요
 
-![_2021-06-18__10.27.47](/uploads/ef443e97faeddd2c3dd8199481249f7f/_2021-06-18__10.27.47.png)
+<img width="1021" alt="_2021-06-18__10 27 47" src="https://user-images.githubusercontent.com/55180768/122496986-a5dda380-d027-11eb-8d46-cb4809bb2413.png">
 
 < 센서 Pi - 관리자 영역 >
 
@@ -123,17 +123,17 @@ System / Embedded Programming Project
 
 # 사용 센서 목록
 
-![스크린샷_2021-06-18_오전_11.18.49](/uploads/da2ba0e9d2985b1f8cbdefc83cda61b7/스크린샷_2021-06-18_오전_11.18.49.png)
+<img width="778" alt="스크린샷 2021-06-18 오전 11 24 01" src="https://user-images.githubusercontent.com/55180768/122497020-b0983880-d027-11eb-8f2c-530962faddca.png">
 
 # 시스템 구성
 
-![_2021-06-18__10.43.11](/uploads/a907ab364c59833baa57b8dfabad9890/_2021-06-18__10.43.11.png)
+<img width="1020" alt="_2021-06-18__10 43 11" src="https://user-images.githubusercontent.com/55180768/122497000-aa09c100-d027-11eb-9c28-8fde84465d1a.png">
 
 # 실제 구현
 
-![_2021-06-18__11.05.39](/uploads/9ca06dfe021d22e9942425dfb34b5b17/_2021-06-18__11.05.39.png)
+<img width="909" alt="_2021-06-18__11 05 39" src="https://user-images.githubusercontent.com/55180768/122497005-ad9d4800-d027-11eb-8df4-c7607f840287.png">
 
-![_2021-06-18__11.01.53](/uploads/9707021a7e90ade978717471f60f078b/_2021-06-18__11.01.53.png)
+<img width="909" alt="_2021-06-18__11 01 53" src="https://user-images.githubusercontent.com/55180768/122497003-ab3aee00-d027-11eb-8939-1fdec8ee554a.png">
 
 
 
